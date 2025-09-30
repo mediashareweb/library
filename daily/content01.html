@@ -27,19 +27,19 @@
         .article-container {
             background-color: #151515;
             border-radius: 6px;
-            padding: 35px 30px;
-            margin-top: 25px;
+            padding: 30px 25px;
+            margin-top: 20px;
             border: 1px solid #2a2a2a;
         }
 
         .header {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             padding-bottom: 15px;
             border-bottom: 1px solid #333;
         }
 
         h1 {
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             color: #f0f0f0;
             margin-bottom: 10px;
             font-weight: normal;
@@ -49,7 +49,7 @@
 
         .subtitle {
             color: #c0c0c0;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 15px;
             font-style: italic;
             text-align: left;
@@ -57,7 +57,7 @@
 
         .meta {
             color: #999;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-bottom: 8px;
             display: flex;
             justify-content: space-between;
@@ -65,42 +65,19 @@
         }
 
         .content {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .content p {
-            margin-bottom: 18px;
-            font-size: 1.05rem;
+            margin-bottom: 15px;
+            font-size: 1rem;
             text-align: left;
             color: #d0d0d0;
         }
 
-        .content h2 {
-            font-size: 1.4rem;
-            margin: 25px 0 12px 0;
-            color: #e8e8e8;
-            font-weight: normal;
-            border-left: 3px solid #444;
-            padding-left: 12px;
-        }
-
-        .content-image {
-            width: 100%;
-            height: 180px;
-            background: linear-gradient(45deg, #1a1a2e, #16213e);
-            border-radius: 4px;
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-style: italic;
-            border: 1px solid #2a2a2a;
-        }
-
         .prominent-button-container {
-            margin: 35px 0;
-            padding: 25px;
+            margin: 25px 0;
+            padding: 20px;
             text-align: center;
             background: rgba(25, 25, 35, 0.7);
             border-radius: 8px;
@@ -123,19 +100,19 @@
         }
 
         .prominent-button-container p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #e0e0e0;
-            font-size: 1.05rem;
+            font-size: 1rem;
         }
 
         .watch-btn {
             display: inline-block;
-            padding: 15px 35px;
+            padding: 14px 32px;
             background: linear-gradient(45deg, #ff6b6b, #ff8e53);
             color: white;
             text-decoration: none;
             border-radius: 6px;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 600;
             border: none;
             transition: all 0.3s ease;
@@ -154,46 +131,69 @@
             transform: translateY(0);
         }
 
+        .content h2 {
+            font-size: 1.3rem;
+            margin: 20px 0 10px 0;
+            color: #e8e8e8;
+            font-weight: normal;
+            border-left: 3px solid #444;
+            padding-left: 10px;
+        }
+
+        .content-image {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            border-radius: 4px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-style: italic;
+            border: 1px solid #2a2a2a;
+        }
+
         .footer {
-            margin-top: 35px;
+            margin-top: 30px;
             padding-top: 15px;
             border-top: 1px solid #333;
             color: #777;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             text-align: center;
         }
 
         .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin: 15px 0;
+            gap: 6px;
+            margin: 12px 0;
         }
 
         .tag {
             background: #252525;
-            padding: 4px 10px;
+            padding: 3px 8px;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #aaa;
             border: 1px solid #333;
         }
 
         @media (max-width: 600px) {
             body {
-                padding: 15px;
+                padding: 10px;
             }
             
             .article-container {
-                padding: 25px 20px;
+                padding: 20px 15px;
             }
             
             h1 {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
             }
             
             .content p {
-                font-size: 1rem;
+                font-size: 0.95rem;
             }
             
             .meta {
@@ -201,12 +201,31 @@
             }
             
             .prominent-button-container {
-                padding: 20px 15px;
+                padding: 15px 12px;
+                margin: 20px 0;
             }
             
             .watch-btn {
-                padding: 13px 28px;
-                font-size: 1.05rem;
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .content-image {
+                height: 120px;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .article-container {
+                padding: 20px 20px;
+            }
+            
+            .header {
+                margin-bottom: 15px;
+            }
+            
+            .prominent-button-container {
+                margin: 15px 0;
             }
         }
     </style>
@@ -219,7 +238,7 @@
             <div class="meta">
                 <span>By Media Research Team</span>
                 <span>October 2023</span>
-                <span>3 min read</span>
+                <span>2 min read</span>
             </div>
             <div class="tags">
                 <span class="tag">Digital Media</span>
@@ -231,6 +250,12 @@
         <div class="content">
             <p>Recent analysis reveals significant shifts in how audiences engage with digital content. Viewers increasingly prefer meaningful, well-produced material that offers both entertainment and educational value.</p>
             
+            <!-- Prominent Button Section placed early in the content -->
+            <div class="prominent-button-container">
+                <p>Access our complete visual analysis to explore these trends through interactive data and examples:</p>
+                <a href="http://www.videohub.space/Hub/c1b74236-2c68-45d3-b512-11ec3a95206f" class="watch-btn"> WATCH ON </a>
+            </div>
+            
             <div class="content-image">
                 [Content engagement visualization]
             </div>
@@ -239,17 +264,9 @@
             
             <p>Modern audiences demonstrate a clear preference for quality over quantity. Research shows completion rates for substantive content have increased by 40% in recent years, while engagement with superficial content declines.</p>
             
-            <!-- Prominent Button Section in the middle of the article -->
-            <div class="prominent-button-container">
-                <p>Access our complete visual analysis to explore these trends through interactive data and examples:</p>
-                <a href="http://www.videohub.space/Hub/c1b74236-2c68-45d3-b512-11ec3a95206f" class="watch-btn">WATCH ON</a>
-            </div>
-            
             <h2>Future Outlook</h2>
             
             <p>The data suggests we're entering a new era of digital content where depth and authenticity matter more than production quality alone. This represents an opportunity for creators to connect with audiences on a more meaningful level.</p>
-            
-            <p>Understanding these evolving patterns helps content creators and distributors better serve their audiences in an increasingly competitive landscape.</p>
         </div>
         
         <div class="footer">
